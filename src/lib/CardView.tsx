@@ -7,7 +7,7 @@ interface CardProps {
 const CardView: React.FC<CardProps> = (props) => {
   const cardClass = 'card rank-' + props.rank.toLowerCase() + ' ' + props.suit;
   let suit = '';
-  if (props.suit === 'diams' ) {
+  if (props.suit === 'diams') {
     suit = '♦';
   } else if (props.suit === 'hearts') {
     suit = '♥';
